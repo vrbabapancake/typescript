@@ -1,0 +1,13 @@
+# dependencies and build output
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets — never commit real keys
+.env
+.env*.local
+
+# OS clutter
+.DS_Store

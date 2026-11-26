@@ -1,0 +1,27 @@
+{
+  "name": "pagerduty-incidents-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small Next.js + TypeScript app that lists open PagerDuty incidents. Runs in demo mode with sample data by default.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"lib/**/*.test.ts\""
+  },
+  "dependencies": {
+    "next": "^16.4.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
