@@ -1,0 +1,99 @@
+/* Mark's Site design tokens: "Sketchbook". Slate teal + lilac on a light cream page,
+   plum-black ink, thin line-art outlines and grid-paper detail. Flat: no gradient
+   fills, no blurry glows; depth comes from hard offset lilac shadows.
+   Every text pair passes WCAG 2.1 AA (4.5:1); outlines and focus rings pass 3:1.
+   Recheck contrast when changing a value. (6Clues and Pub Quizzes keep their own
+   green tokens for now.) */
+:root {
+  /* Surfaces */
+  --bg: #f6f1ea;               /* light cream page (pinker and lighter than beige) */
+  --card: #ffffff;
+  --field: #ffffff;
+  --track: #ece4ef;
+  --overlay: rgba(38,19,42,.55);
+
+  /* Ink */
+  --text: #26132a;             /* plum-black: 17.4:1 on card */
+  --muted: #55455a;            /* 8.8:1 on card */
+  --card-muted: #55455a;
+  --line: #26132a;             /* line-art outlines on cards, frames, buttons */
+  --border: rgba(38,19,42,.16);/* quiet dividers only */
+  --field-border: #7d6f80;     /* 4.7:1 */
+  --grid: rgba(38,19,42,.10);  /* grid-paper lines */
+
+  /* Slate teal: the brand colour */
+  --accent: #36677a;           /* focus ring, icons, small UI: 5.5:1 on bg */
+  --accent-strong: #2c5566;    /* button fill: 8.1:1 with white text */
+  --accent-strong-hover: #234553;
+  --accent-text: #2f5d6e;      /* teal links/text: 7.2:1 on card */
+  --band: #36677a;             /* hero band */
+  --on-band: #f6f1ea;          /* text on the band: 5.5:1 */
+  --ring: rgba(54,103,122,.30);
+
+  /* Lilac: shapes, highlights, hover shadows */
+  --lilac: #f3cdf7;
+  --lilac-soft: #f8e4fa;
+  --lilac-text: #6b2d73;       /* 9.3:1 on card */
+  --on-lilac: #26132a;         /* text on lilac is always dark, both themes */
+  --icon-bg: var(--lilac);
+  --hover-border: var(--line);
+  --highlight: var(--lilac);
+  --highlight-text: var(--on-lilac);
+
+  /* Status (always paired with a symbol or words) */
+  --success: #1d6b3a;
+  --success-bg: #e5f1e7;
+  --danger: #b3261e;
+  --danger-bg: #fbeceb;
+
+  /* Depth: hard offset blocks, never blur */
+  --shadow-button: none;
+  --shadow-card: none;
+  --shadow-hover: 6px 6px 0 var(--lilac);
+  --shadow: 8px 8px 0 var(--lilac);
+
+  --radius: 10px;
+  --radius-feature: 24px;      /* big lilac shapes */
+  --radius-button: 8px;
+  --radius-tile: 8px;
+
+  /* Type: geometric sans for headings and UI, sturdy serif for reading */
+  --font-display: 'Figtree', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-body: 'Bitter', Georgia, 'Times New Roman', serif;
+  --font: var(--font-display);
+}
+html.dark {
+  --bg: #15232a;               /* deep slate */
+  --card: #1d2f37;
+  --field: #15232a;
+  --track: #2a3d45;
+  --overlay: rgba(0,0,0,.70);
+
+  --text: #f6f1ea;
+  --muted: #c6bccb;
+  --card-muted: #c6bccb;
+  --line: #c6bccb;
+  --border: rgba(246,241,234,.16);
+  --field-border: #8a9aa1;
+  --grid: rgba(246,241,234,.08);
+
+  --accent: #8cc3d6;
+  --accent-strong: #2c5566;    /* white text 8.1:1 */
+  --accent-strong-hover: #346577;
+  --accent-text: #9fd0e1;
+  --band: #2c5566;
+  --on-band: #f6f1ea;          /* 7.2:1 */
+  --ring: rgba(140,195,214,.35);
+
+  --lilac: #e9b6ee;
+  --lilac-soft: #3a2840;
+  --lilac-text: #f0c8f4;
+
+  --success: #6fcf93;
+  --success-bg: #18301f;
+  --danger: #f28b82;
+  --danger-bg: #3a1c1a;
+
+  --shadow-hover: 6px 6px 0 #6b4a72;
+  --shadow: 8px 8px 0 #6b4a72;
+}

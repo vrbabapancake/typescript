@@ -39,7 +39,8 @@ Git ignores `.env.local`, so the key is never committed. The app reads the key o
 |---|---|
 | `app/page.tsx` | The page. A Server Component that fetches incidents and renders them. |
 | `app/layout.tsx` | The HTML shell wrapped around every page. |
-| `app/globals.css` | Styles. |
+| `app/tokens.css` | Design tokens from my portfolio's "Sketchbook" design system (colours, fonts, radii). Copied as-is so both stay in sync. |
+| `app/globals.css` | Page styles built on those tokens: teal band, ink outlines, lilac offset shadows, grid-paper "browser window". Light and dark mode. |
 | `lib/types.ts` | TypeScript types: the shape of an incident, in the API's format and in this app's format. |
 | `lib/pagerduty.ts` | Calls the PagerDuty REST API, or returns sample data in demo mode. |
 | `lib/incidents.ts` | Pure functions that convert, sort, summarize, and format incidents. |
